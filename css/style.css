@@ -1,0 +1,93 @@
+body {
+   background: url(../img/singbackground7.png) no-repeat;
+   background-size: 1800px 950px;
+}
+
+.background {
+    width: 90%;
+    height: 20%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    animation-name: twinkle;
+    transition-property: all;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@-webkit-keyframes twinkle {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.title {
+    display: block;
+    width: 700px;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+}
+
+.box {
+    width: 60%;
+    height: 500px;
+    float: left;
+    /* border: 5px solid blue; */
+    display: block;
+    float: left;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+}
+
+.box:hover {
+    width: 60%;
+    height: 500px;
+    float: left;
+    /* border: 5px solid black; */
+    display: block;
+    float: left;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+    animation-name: disappear;
+    transition-property: opacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.box2 {
+    width: 60%;
+    height: 500px;
+    float: left;
+    /* border: 5px solid red; */
+    display: block;
+    float: left;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+}
